@@ -1,6 +1,6 @@
-# Qualímetro — Data Quality Report 
+# Qualimeter — Data Quality Report 
 
-Qualímetro is a Streamlit-based application designed to help users inspect, understand, and evaluate the quality of datasets through a simple and intuitive interface.
+Qualimeter is a Streamlit-based application designed to help users inspect, understand, and evaluate the quality of datasets through a simple and intuitive interface.
 
 The application allows users to upload datasets, preview their structure, inspect basic metadata, and serves as the foundation for generating automated data quality diagnostics and reports.
 
