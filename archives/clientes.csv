@@ -1,0 +1,124 @@
+﻿cliente_id,nome,idade,email,cidade,plano,renda_mensal,data_cadastro,ativo
+1,Larissa Gomes,25,larissa.gomes1@email.com,Rio de Janeiro,Enterprise,6255.47,2024-08-16,Sim
+2,Marcos Pereira,24,marcos.pereira2@email.com,Recife,Enterprise,16253.31,2024-03-30,Não
+3,Ana Souza,19,ana.souza3@email.com,Rio de Janeiro,Básico,5569.11,2025-09-08,Sim
+4,Isabela Santos,30,isabela.santos4@email.com,Recife,Enterprise,13161.46,2025-03-05,Sim
+5,Henrique Silva,55,henrique.silva5@email.com,Belo Horizonte,Básico,14092.68,2024-06-12,Não
+6,Felipe Costa,35,felipe.costa6@email.com,São Paulo,Básico,17306.85,2024-12-10,Sim
+7,Bruno Lima,42,bruno.lima7@email.com,Rio de Janeiro,Premium,15529.41,2025-09-10,Não
+8,Natalia Ribeiro,20,natalia.ribeiro8@email.com,Recife,Premium,10486.9,2025-01-22,Sim
+9,Isabela Santos,36,isabela.santos9@email.com,Recife,Enterprise,16144.32,2025-01-05,Sim
+10,Marcos Pereira,22,marcos.pereira10@email.com,Rio de Janeiro,Enterprise,5491.95,2024-10-23,Sim
+11,Paulo Fernandes,32,paulo.fernandes11@email.com,Rio de Janeiro,Premium,6303.17,2025-10-12,Não
+12,Carla Mendes,41,carla.mendes12@email.com,Belo Horizonte,Básico,12656.84,2025-11-30,Sim
+13,João Oliveira,58,joao.oliveira13@email.com,São Paulo,Enterprise,13611.85,2024-06-16,Não
+14,Gabriela Martins,35,gabriela.martins14@email.com,Recife,Enterprise,10822.59,2024-11-28,Sim
+15,Daniel Rocha,70,daniel.rocha15@email.com,Rio de Janeiro,Premium,8298.87,2024-03-08,Sim
+16,Renata Castro,54,renata.castro16@email.com,Recife,Premium,5244.55,2025-05-26,Não
+17,Renata Castro,59,renata.castro17@email.com,,Básico,6091.06,2024-09-09,Não
+18,Marcos Pereira,55,marcos.pereira18@email.com,Curitiba,Enterprise,8270.29,2024-08-12,Sim
+19,Isabela Santos,49,isabela.santos19@email.com,Rio de Janeiro,Básico,15749.87,2024-06-05,Sim
+20,Natalia Ribeiro,61,natalia.ribeiro20@email.com,Curitiba,Enterprise,2829.15,2025-01-25,Não
+21,Isabela Santos,34,isabela.santos21@email.com,Salvador,Básico,12820.59,2024-04-27,Não
+22,Natalia Ribeiro,59,natalia.ribeiro22@email.com,Belo Horizonte,Básico,6554.7,2024-06-10,Não
+23,Ana Souza,,ana.souza23@email.com,Recife,Premium,17544.59,2024-07-01,Sim
+24,Paulo Fernandes,58,paulo.fernandes24@email.com,Belo Horizonte,Enterprise,10024.14,2024-07-22,Sim
+25,Felipe Costa,66,felipe.costa25@email.com,São Paulo,Enterprise,17246.7,2025-06-27,Sim
+26,João Oliveira,38,joao.oliveira26@email.com,Curitiba,Básico,3612.26,2025-01-06,Não
+27,Daniel Rocha,21,daniel.rocha27@email.com,São Paulo,Enterprise,17140.58,2024-03-28,Não
+28,Paulo Fernandes,22,paulo.fernandes28@email.com,Salvador,Básico,3879.94,2025-05-01,Sim
+29,Eduarda Alves,51,email_invalido,Salvador,Premium,17422.68,2025-07-06,Sim
+30,Marcos Pereira,37,marcos.pereira30@email.com,Curitiba,Enterprise,12328.02,2025-03-24,Não
+31,Bruno Lima,33,bruno.lima31@email.com,São Paulo,Básico,-500.0,2025-08-25,Sim
+32,João Oliveira,32,joao.oliveira32@email.com,Rio de Janeiro,Básico,13267.02,2024-03-01,Sim
+33,Bruno Lima,20,bruno.lima33@email.com,Belo Horizonte,Básico,10129.33,2024-10-12,Não
+34,Daniel Rocha,52,daniel.rocha34@email.com,,Enterprise,16955.33,2025-08-07,Não
+35,Daniel Rocha,68,daniel.rocha35@email.com,Curitiba,Premium,4884.64,2024-04-09,Não
+36,Felipe Costa,45,felipe.costa36@email.com,Curitiba,Premium,15794.16,2024-02-25,Sim
+37,Ana Souza,43,ana.souza37@email.com,Recife,premium,14769.6,2024-04-21,Sim
+38,Daniel Rocha,30,daniel.rocha38@email.com,Salvador,Premium,4070.95,2024-07-06,Não
+39,Henrique Silva,33,henrique.silva39@email.com,Rio de Janeiro,Premium,14889.96,2025-07-17,Sim
+40,Ana Souza,59,ana.souza40@email.com,Salvador,Básico,17497.74,2024-08-30,Sim
+41,Gabriela Martins,49,gabriela.martins41@email.com,Curitiba,Básico,15807.34,2024-03-01,Sim
+42,Gabriela Martins,18,gabriela.martins42@email.com,Curitiba,Premium,16809.59,2025-04-10,Não
+43,Gabriela Martins,62,gabriela.martins43@email.com,Recife,Enterprise,12522.32,2025-05-13,Sim
+44,Daniel Rocha,36,daniel.rocha44@email.com,São Paulo,Básico,11182.72,2025-07-09,Sim
+45,Marcos Pereira,38,marcos.pereira45@email.com,Rio de Janeiro,Básico,11263.68,2025-05-29,Sim
+46,Ana Souza,,ana.souza46@email.com,Rio de Janeiro,Básico,2910.05,2024-03-10,Sim
+47,Gabriela Martins,25,gabriela.martins47@email.com,Salvador,Básico,11178.49,2024-02-10,Sim
+48,Gabriela Martins,60,gabriela.martins48@email.com,Salvador,Enterprise,10269.08,2024-09-24,Sim
+49,Larissa Gomes,63,larissa.gomes49@email.com,Belo Horizonte,Básico,6102.96,2024-05-14,Não
+50,Henrique Silva,38,henrique.silva50@email.com,Rio de Janeiro,Básico,9224.23,2025-07-30,Sim
+51,Bruno Lima,52,bruno.lima51@email.com,,Enterprise,6096.25,2024-12-23,Sim
+52,Renata Castro,33,renata.castro52@email.com,Belo Horizonte,Premium,4355.5,2025-07-10,Não
+53,João Oliveira,69,joao.oliveira53@email.com,Recife,Enterprise,1926.73,2025-07-21,Não
+54,Renata Castro,60,renata.castro54@email.com,Rio de Janeiro,Básico,6084.35,2024-04-19,Sim
+55,Eduarda Alves,36,eduarda.alves55@email.com,Salvador,Básico,13425.32,2024-07-27,Não
+56,Isabela Santos,49,isabela.santos56@email.com,Belo Horizonte,Básico,3295.24,2025-03-09,Não
+57,Ana Souza,18,ana.souza57@email.com,Belo Horizonte,Básico,12121.24,2024-09-25,Sim
+58,Marcos Pereira,46,email_invalido,Salvador,Enterprise,8728.53,2024-01-10,Sim
+59,Bruno Lima,62,bruno.lima59@email.com,São Paulo,Enterprise,2383.66,2025-01-13,Sim
+60,Gabriela Martins,26,gabriela.martins60@email.com,Rio de Janeiro,Premium,7707.35,2024-02-10,Não
+61,Daniel Rocha,61,daniel.rocha61@email.com,São Paulo,Enterprise,3465.26,2025-07-27,Não
+62,João Oliveira,65,joao.oliveira62@email.com,São Paulo,Básico,-500.0,2024-06-30,Não
+63,Ana Souza,29,ana.souza63@email.com,Recife,Premium,14474.66,2025-02-25,Sim
+64,Eduarda Alves,28,eduarda.alves64@email.com,Recife,Básico,7997.18,2024-02-09,Não
+65,Daniel Rocha,30,daniel.rocha65@email.com,Curitiba,Premium,6744.09,2024-08-21,Sim
+66,Ana Souza,60,ana.souza66@email.com,São Paulo,Premium,7117.84,2024-03-12,Não
+67,Felipe Costa,59,felipe.costa67@email.com,Salvador,Premium,12808.19,2025-07-03,Não
+68,Ana Souza,25,ana.souza68@email.com,,Básico,11205.55,2024-09-28,Sim
+69,Bruno Lima,,bruno.lima69@email.com,Curitiba,Premium,13602.43,2024-11-17,Não
+70,João Oliveira,50,joao.oliveira70@email.com,Rio de Janeiro,Premium,16371.98,2024-07-13,Não
+71,Ana Souza,63,ana.souza71@email.com,Curitiba,Básico,10222.71,2025-07-05,Sim
+72,Felipe Costa,45,felipe.costa72@email.com,Rio de Janeiro,Enterprise,16716.49,2025-09-30,Não
+73,Larissa Gomes,25,larissa.gomes73@email.com,Recife,Premium,10015.38,2025-11-13,Não
+74,Felipe Costa,43,felipe.costa74@email.com,Recife,premium,10781.48,2024-07-15,Não
+75,Larissa Gomes,42,larissa.gomes75@email.com,Recife,Enterprise,16425.45,2025-09-22,Não
+76,Gabriela Martins,53,gabriela.martins76@email.com,Rio de Janeiro,Premium,6448.0,2025-03-16,Não
+77,Henrique Silva,46,henrique.silva77@email.com,Curitiba,Enterprise,5261.96,2025-04-29,Sim
+78,Larissa Gomes,23,larissa.gomes78@email.com,Belo Horizonte,Enterprise,12554.43,2025-09-26,Não
+79,Bruno Lima,70,bruno.lima79@email.com,São Paulo,Enterprise,6828.8,2024-07-22,Sim
+80,Ana Souza,20,ana.souza80@email.com,São Paulo,Premium,11702.64,2024-03-15,Não
+81,Gabriela Martins,58,gabriela.martins81@email.com,Salvador,Básico,13437.2,2025-01-28,Não
+82,Gabriela Martins,33,gabriela.martins82@email.com,São Paulo,Enterprise,12939.48,2024-04-19,Não
+83,Daniel Rocha,29,daniel.rocha83@email.com,Recife,Enterprise,9325.71,2025-07-24,Sim
+84,Renata Castro,25,renata.castro84@email.com,Curitiba,Básico,14782.95,2025-11-14,Não
+85,Natalia Ribeiro,46,natalia.ribeiro85@email.com,,Enterprise,16250.73,2025-03-12,Não
+86,Renata Castro,28,renata.castro86@email.com,Recife,Premium,9091.13,2024-09-10,Não
+87,Natalia Ribeiro,67,email_invalido,Salvador,Premium,11953.32,2024-10-08,Não
+88,Bruno Lima,150,bruno.lima88@email.com,Belo Horizonte,Básico,6201.78,2024-11-23,Sim
+89,Carla Mendes,27,carla.mendes89@email.com,São Paulo,Premium,13041.99,2024-08-07,Sim
+90,Gabriela Martins,44,gabriela.martins90@email.com,Belo Horizonte,Enterprise,9347.97,2024-03-04,Sim
+91,Paulo Fernandes,44,paulo.fernandes91@email.com,Curitiba,Enterprise,17126.2,2024-01-21,Não
+92,Henrique Silva,,henrique.silva92@email.com,Belo Horizonte,Premium,14006.3,2025-03-05,Sim
+93,Henrique Silva,32,henrique.silva93@email.com,Belo Horizonte,Premium,-500.0,2025-02-02,Não
+94,Larissa Gomes,61,larissa.gomes94@email.com,Curitiba,Enterprise,4473.72,2025-04-23,Sim
+95,João Oliveira,52,joao.oliveira95@email.com,Rio de Janeiro,Premium,11388.66,2025-11-09,Sim
+96,Bruno Lima,59,bruno.lima96@email.com,Curitiba,Básico,15842.99,2024-07-05,Sim
+97,Eduarda Alves,42,eduarda.alves97@email.com,Belo Horizonte,Básico,9166.13,2024-12-11,Não
+98,Eduarda Alves,66,eduarda.alves98@email.com,Curitiba,Premium,15325.56,2025-04-26,Sim
+99,Marcos Pereira,52,marcos.pereira99@email.com,Rio de Janeiro,Premium,250000.0,2024-03-11,Sim
+100,Natalia Ribeiro,19,natalia.ribeiro100@email.com,São Paulo,Básico,15395.51,2025-09-28,Sim
+101,Daniel Rocha,26,daniel.rocha101@email.com,Curitiba,Enterprise,3653.11,2024-08-11,Não
+102,Marcos Pereira,34,marcos.pereira102@email.com,,Básico,11615.46,2024-04-27,Sim
+103,Eduarda Alves,24,eduarda.alves103@email.com,Salvador,Básico,16847.97,2025-08-12,Não
+104,Gabriela Martins,63,gabriela.martins104@email.com,São Paulo,Básico,11391.99,2025-10-04,Sim
+105,Bruno Lima,62,bruno.lima105@email.com,Belo Horizonte,Enterprise,11526.67,2024-05-03,Sim
+106,Felipe Costa,52,felipe.costa106@email.com,Curitiba,Enterprise,7803.25,2025-06-02,Não
+107,Ana Souza,44,ana.souza107@email.com,Curitiba,Básico,8823.08,2025-01-05,Não
+108,Marcos Pereira,27,marcos.pereira108@email.com,Curitiba,Básico,13687.48,2025-10-28,Não
+109,João Oliveira,69,joao.oliveira109@email.com,Salvador,Premium,9330.96,2025-08-29,Não
+110,Felipe Costa,33,felipe.costa110@email.com,Rio de Janeiro,Premium,16082.43,2024-09-06,Não
+111,João Oliveira,57,joao.oliveira111@email.com,Recife,premium,7249.63,2025-05-21,Não
+112,Carla Mendes,49,carla.mendes112@email.com,São Paulo,Premium,14724.88,2024-12-14,Não
+113,Renata Castro,56,renata.castro113@email.com,Recife,Premium,10803.81,2025-06-13,Sim
+114,Bruno Lima,33,bruno.lima114@email.com,Recife,Premium,9714.96,2024-09-03,Não
+115,Larissa Gomes,,larissa.gomes115@email.com,Curitiba,Premium,14645.51,2024-04-05,Não
+116,Daniel Rocha,43,email_invalido,Recife,Básico,6760.54,2025-08-18,Não
+117,Henrique Silva,53,henrique.silva117@email.com,Salvador,Premium,8693.16,2025-07-17,Não
+118,Felipe Costa,62,felipe.costa118@email.com,Curitiba,Premium,6767.29,2024-08-24,Sim
+119,Marcos Pereira,30,marcos.pereira119@email.com,,Básico,13834.67,2024-07-08,Sim
+120,Daniel Rocha,65,daniel.rocha120@email.com,Curitiba,Premium,13538.28,2025-06-21,Não
+10,Marcos Pereira,22,marcos.pereira10@email.com,Rio de Janeiro,Enterprise,5491.95,2024-10-23,Sim
+25,Felipe Costa,66,felipe.costa25@email.com,São Paulo,Enterprise,17246.7,2025-06-27,Sim
+50,Henrique Silva,38,henrique.silva50@email.com,Rio de Janeiro,Básico,9224.23,2025-07-30,Sim
