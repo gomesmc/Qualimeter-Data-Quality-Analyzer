@@ -10,7 +10,7 @@ The application allows users to upload datasets, preview their structure, inspec
 
 Data quality is an important step before performing analysis, building dashboards, or training machine learning models.
 
-Qualímetro aims to simplify this process by providing a visual interface where users can upload a dataset and quickly understand its structure before performing deeper quality checks.
+Qualímeter aims to simplify this process by providing a visual interface where users can upload a dataset and quickly understand its structure before performing deeper quality checks.
 
 The project is being developed incrementally, starting with file upload and dataset inspection and evolving toward automated data quality analysis.
 
