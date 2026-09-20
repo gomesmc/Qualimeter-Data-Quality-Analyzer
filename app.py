@@ -1,163 +1,204 @@
-import streamlit as st
 import pandas as pd
-from pathlib import Path
+import streamlit as st
+
+from src.styles.loader import carregar_css
+
+
+# ==================================================
+# CONFIGURAÇÃO DA PÁGINA
+# ==================================================
 
 st.set_page_config(
-    page_title='Qualímetro',
+    page_title="Qualímetro",
     page_icon="📊",
     layout="wide"
 )
 
-def carregar_css(caminho_css):
-    with open(caminho_css, encoding='UTF-8') as arquivo_css:
-        st.markdown(
-            f"<style>{arquivo_css.read()}</style>",
-            unsafe_allow_html=True
-        )
+carregar_css()
 
 
-caminho_css = Path(__file__).parent / "src" / "style" / "style.css"
-
-carregar_css(caminho_css)
+# ==================================================
+# SIDEBAR
+# ==================================================
 
 with st.sidebar:
+
     st.title("Qualímetro")
-    st.caption("Relatório de qualidade dos dados")
+
+    st.caption(
+        "Relatório de qualidade de dados"
+    )
 
     st.divider()
 
-    st.subheader("Relatório")
-    st.write("- Resumo")
+    st.page_link(
+        "app.py",
+        label="Nova análise"
+    )
 
-st.caption("Relatório de Qualidade · Nova Análise")
+    st.page_link(
+        "pages/diagnostic.py",
+        label="Diagnóstico"
+    )
 
-st.title("Comece a análise pelo seu dataset")
+    st.divider()
+
+
+# ==================================================
+# CABEÇALHO
+# ==================================================
+
+st.caption(
+    "RELATÓRIO DE QUALIDADE · NOVA ANÁLISE"
+)
+
+st.title(
+    "Comece pelo seu dataset"
+)
 
 st.write(
-    """
-    Envie o arquivo que deseja 
-    analisar a qualidade e estrutura dos dados.
-    """
+    "Envie o arquivo que deseja analisar. "
+    "O Qualímetro irá avaliar estrutura, completude, "
+    "consistência e qualidade dos dados."
 )
 
 st.divider()
 
-col1, col2 = st.columns([1, 2])  # [1,2] são as larguras das colunas
+
+# ==================================================
+# ÁREA DE UPLOAD
+# ==================================================
+
+col1, col2 = st.columns(
+    [1, 2],
+    gap="large"
+)
+
 
 with col1:
 
-    st.subheader("Envie seu arquivo")
+    st.subheader(
+        "Envie seu arquivo"
+    )
 
-    st.write("Selecione o arquivo que deseja analisar.")
+    st.write(
+        "Selecione um conjunto de dados "
+        "para iniciar o diagnóstico."
+    )
 
-    st.write("Formatos aceitos:")
-    st.write("- CSV")
-    st.write("- Excel")
-    st.write("- JSON")
+    st.caption(
+        "FORMATOS ACEITOS"
+    )
+
+    st.write("CSV")
+    st.write("Excel")
+    st.write("JSON")
+
 
 with col2:
 
-    arquivo = st.file_uploader(
-        "Selecione o arquivo",
-        type=["csv", "xlsx", "json"]
-    )
+    with st.container(border=True):
 
-if arquivo is not None:
-
-    st.divider()
-
-    st.success("Arquivo carregado com sucessso!")
-
-    st.subheader("Arquivo selecionado")
-
-    col_nome, col_tipo, col_tamanho = st.columns(3)
-
-    with col_nome:
-        st.metric(
-            label="Nome",
-            value=arquivo.name
+        arquivo = st.file_uploader(
+            "Selecione ou arraste um arquivo",
+            type=[
+                "csv",
+                "xlsx",
+                "json"
+            ]
         )
 
-    with col_tipo:
-        extensao = arquivo.name.split('.')[-1].lower()
+        if arquivo is not None:
 
-        st.metric(
-            label="Formato",
-            value=extensao
-        )
+            st.success(
+                "Arquivo carregado com sucesso!"
+            )
 
-    with col_tamanho:
-        tamanho_kb = arquivo.size / 1024
+            st.write(
+                f"**Arquivo:** {arquivo.name}"
+            )
 
-        st.metric(
-            label="Tamanho",
-            value=f'{tamanho_kb:.2f} KB'
-        )
+            tamanho_kb = arquivo.size / 1024
 
-    st.divider()
+            st.caption(
+                f"Tamanho: {tamanho_kb:.2f} KB"
+            )
 
-    analisar = st.button(
-        "Gerar diagnóstico",
-        type="primary"
-    )
-
-    if analisar:
-
-        try:
-            extensao = arquivo.name.split('.')[-1].lower()
-
-            if extensao == 'csv':
-                dados = pd.read_csv(arquivo)
-
-            elif extensao == 'xlsx':
-                dados = pd.read_excel(arquivo)
-
-            elif extensao == 'json':
-                dados = pd.read_json(arquivo)
-
-            st.success("Arquivo processado com sucesso!")
-
-            st.subheader("Visão geral")
-
-            col_linhas, col_colunas, col_memoria = st.columns(3)
-
-            with col_linhas:
-                st.metric(
-                    "Linhas",
-                    dados.shape[0]
-                )
-
-            with col_colunas:
-                st.metric(
-                    "Colunas",
-                    dados.shape[1]
-                )
-
-            with col_memoria:
-                memoria_kb = dados.memory_usage(deep=True).sum() / 1024
-
-                st.metric(
-                    label="Memória Utilizada",
-                    value=f"{memoria_kb:.2f} KB"
-                )
-
-            estrutura = pd.DataFrame({
-                "Coluna": dados.columns,
-                "Tipo": dados.dtypes.astype(str).values
-            })
-
-            st.subheader("Estrutura dos Dados")
-
-            st.table(estrutura)
-
-            st.divider()
-
-            st.subheader("Prévia dos dados")
-
-            st.dataframe(
-                dados.head(),
+            analisar = st.button(
+                "Gerar diagnóstico",
+                type="primary",
                 use_container_width=True
             )
 
-        except Exception as erro:
-            st.error(f"Não foi possível processar o arquivo {erro}")
+            if analisar:
+
+                try:
+
+                    # Identifica a extensão
+                    extensao = (
+                        arquivo.name
+                        .split(".")[-1]
+                        .lower()
+                    )
+
+
+                    # ==========================================
+                    # LEITURA DO ARQUIVO
+                    # ==========================================
+
+                    if extensao == "csv":
+
+                        dados = pd.read_csv(
+                            arquivo
+                        )
+
+
+                    elif extensao == "xlsx":
+
+                        dados = pd.read_excel(
+                            arquivo
+                        )
+
+
+                    elif extensao == "json":
+
+                        dados = pd.read_json(
+                            arquivo
+                        )
+
+
+                    else:
+
+                        st.error(
+                            "Formato de arquivo não suportado."
+                        )
+
+                        st.stop()
+
+
+                    # ==========================================
+                    # SALVA OS DADOS NA SESSÃO
+                    # ==========================================
+
+                    st.session_state["dados"] = dados
+
+                    st.session_state[
+                        "nome_arquivo"
+                    ] = arquivo.name
+
+
+                    # ==========================================
+                    # REDIRECIONA PARA O DIAGNÓSTICO
+                    # ==========================================
+
+                    st.switch_page(
+                        "pages/diagnostic.py"
+                    )
+
+
+                except Exception as erro:
+
+                    st.error(
+                        "Não foi possível processar "
+                        f"o arquivo: {erro}"
+                    )

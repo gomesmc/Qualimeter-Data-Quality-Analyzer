@@ -1,0 +1,172 @@
+/* Página*/
+
+.stApp {
+    background-color: #F5F2EC;
+}
+
+[data-testid="stHeader"] {
+    display: none;
+}
+
+.block-container {
+    max-width: 1200px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+
+/* Sidebar */
+
+[data-testid="stSidebar"] {
+    background-color: #FAF8F4;
+    border-right: 1px solid #DEDAD2;
+}
+
+[data-testid="stSidebar"] .block-container {
+    padding-top: 2rem;
+}
+
+[data-testid="stSidebarNav"] {
+    display: none;
+}
+
+[data-testid="stPageLink"] a {
+    color: #5E6B75;
+    font-size: 1.05rem;
+    padding: 0.55rem 0.75rem;
+}
+
+[data-testid="stPageLink"] a:hover {
+    background-color: #E7E2DA;
+    color: #1E3040;
+}
+
+
+/* Textos */
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #1E3040;
+}
+
+h1 {
+    font-size: 3.3rem !important;
+    font-weight: 400 !important;
+    line-height: 1.1 !important;
+}
+
+h2 {
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+}
+
+p {
+    color: #687581;
+}
+
+
+/* Captions*/
+
+[data-testid="stCaptionContainer"] {
+    color: #92999F;
+    letter-spacing: 0.04rem;
+}
+
+
+/* Containers */
+
+[data-testid="stVerticalBlockBorderWrapper"] {
+    background-color: #FBFAF7;
+    border-color: #DEDAD2 !important;
+    border-radius: 16px;
+}
+
+
+/*Upload*/
+
+[data-testid="stFileUploaderDropzone"] {
+    background-color: #F9F8F4;
+    border: 1.5px dashed #BEC7C7;
+    border-radius: 14px;
+    padding: 2rem;
+}
+
+
+/* botão interno do uploader */
+
+[data-testid="stFileUploaderDropzone"] button {
+    background-color: #108C8C;
+    color: white !important;
+    border: none;
+    border-radius: 30px;
+}
+
+[data-testid="stFileUploaderDropzone"] button * {
+    color: white !important;
+}
+
+[data-testid="stFileUploaderDropzone"] button:hover {
+    background-color: #087575;
+    color: white !important;
+}
+
+
+/* Botões */
+
+div.stButton > button {
+    background-color: #108C8C;
+    color: white !important;
+
+    border: none;
+    border-radius: 30px;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+div.stButton > button * {
+    color: white !important;
+}
+
+div.stButton > button:hover {
+    background-color: #087575;
+    color: white !important;
+}
+
+
+/* Métricas*/
+
+[data-testid="stMetric"] {
+    background-color: #FBFAF7;
+    border: 1px solid #DEDAD2;
+    border-radius: 14px;
+    padding: 1.2rem;
+}
+
+
+/* Barras de progresso */
+
+.barra-qualidade {
+    background-color: #E7E2DA;
+    border-radius: 999px;
+    height: 0.55rem;
+    margin: 1.5rem 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.barra-qualidade__preenchimento {
+    background-color: #108C8C;
+    border-radius: inherit;
+    height: 100%;
+}
+
+
+/* Divisores*/
+
+hr {
+    border-color: #DEDAD2;
+}
+
