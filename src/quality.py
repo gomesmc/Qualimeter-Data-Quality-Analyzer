@@ -22,6 +22,10 @@ def data_describe(archive):
     describe = archive.describe()
     return describe
 
+def total_celulas(total_linhas, total_colunas):
+    total_celulas = total_linhas * total_colunas
+    return total_celulas
+
 # data = pd.read_csv('archives/clientes.csv')
 
 # print("check_duplicates(data)")

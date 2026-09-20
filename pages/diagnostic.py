@@ -1,5 +1,14 @@
 import streamlit as st
 
+from src.quality import (
+    check_duplicates,
+    check_nan,
+    check_null,
+    check_total_duplicates,
+    columns as listar_colunas,
+    data_describe,
+    total_celulas
+)
 from src.styles.loader import carregar_css
 
 
@@ -38,16 +47,16 @@ nome_arquivo = st.session_state.get(
 )
 
 total_linhas = dados.shape[0]
-total_colunas = dados.shape[1]
+total_colunas = len(listar_colunas(dados))
 
 # Valores ausentes
 total_ausencias = dados.isna().sum().sum()
 
 # Registros duplicados
-total_duplicatas = dados.duplicated().sum()
+total_duplicatas = check_total_duplicates(dados)
 
 # Total de células do dataset
-total_celulas = total_linhas * total_colunas
+total_celulas = total_celulas(total_linhas, total_colunas)
 
 # Completude
 if total_celulas > 0:
